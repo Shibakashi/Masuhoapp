@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>増穂祭アプリ</title>
+  <link rel="stylesheet" href="common.css" type="text/css">
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="common.js"></script>
+</head>
+
+<body>
+  <div id="content">
+    <img src="imgs/f1.svg">
+  </div>
+  <div id="navi">
+    <div id="f1" class="floorselect" href="index.html">1</div>
+    <div id="f2" class="floorselect" href="floor2.html">2</div>
+    <div id="f3" class="floorselect" href="floor3.html">3</div>
+    <div id="f4" class="floorselect" href="floor4.html">4</div>
+    <div id="f5" class="floorselect" href="floor5.html">5</div>
+  </div>
+  <script>
+$(function() {
+  let navi = $('#navi').height();
+  $(".floorselect").css({
+    "line-height": navi + "px",
+    "font-size": navi * 0.8 + "px"
+  });
+});
+  </script>
+</body>
+
+</html>
